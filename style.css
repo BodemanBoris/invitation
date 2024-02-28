@@ -173,6 +173,7 @@ h2 {
   padding: 1rem 1.5rem;
   border-radius: 9999px;
   color: #eea385;
+  text-align: center;
 }
 main {
   display: flex;
