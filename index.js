@@ -1,4 +1,8 @@
 const btn = document.getElementById("button");
+const $toName = document.getElementById("to_name");
+const $emailId = document.getElementById("email_id");
+const $phoneId = document.getElementById("phone_id");
+const $message = document.getElementById("message");
 
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
@@ -18,6 +22,10 @@ document.getElementById("form").addEventListener("submit", function (event) {
       alert(JSON.stringify(err));
     }
   );
+  $toName.value = "";
+  $emailId.value = "";
+  $phoneId.value = "";
+  $message.value = "";
 });
 
 const d = document;
