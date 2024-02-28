@@ -156,12 +156,15 @@ body {
   background-image: url("./carita.jpg");
 }
 #img4 {
-  background-image: url("./rocha.jpg");
+  background-image: url("./pancha.jpg");
 }
 header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  min-width: 380px;
+  width: 100%;
+  max-width: 790px;
 }
 .hero {
   min-width: 380px;
