@@ -1,10 +1,11 @@
-const btn = document.getElementById("button");
-const $toName = document.getElementById("to_name");
-const $emailId = document.getElementById("email_id");
-const $phoneId = document.getElementById("phone_id");
-const $message = document.getElementById("message");
+const d = document;
+const btn = d.getElementById("button");
+const $toName = d.getElementById("to_name");
+const $emailId = d.getElementById("email_id");
+const $phoneId = d.getElementById("phone_id");
+const $message = d.getElementById("message");
 
-document.getElementById("form").addEventListener("submit", function (event) {
+d.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
 
   btn.value = "Sending...";
@@ -28,7 +29,6 @@ document.getElementById("form").addEventListener("submit", function (event) {
   $message.value = "";
 });
 
-const d = document;
 const $img2 = d.getElementById("img2");
 const $img3 = d.getElementById("img3");
 const $img4 = d.getElementById("img4");
