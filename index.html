@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="img1" class="hero scale-up-hor-center">
+        <h1 class="main__title">Este angelito cumple años!</h1>
+      </div>
+      <div id="img2" class="hero no-visible">
+        <h2 class="title">En una fecha muy importante para mi</h2>
+      </div>
+      <div id="img3" class="hero no-visible">
+        <h2 class="title">Quiero invitarte a mi cumpeleaños</h2>
+      </div>
+      <div id="img4" class="hero no-visible">
+        <h2 class="title">TOMA PUTO</h2>
+      </div>
+    </header>
+    <main>
+      <div class="explicacion">
+        <p>
+          Ingresa los datos para poder armar la listad de invitados. Decime
+          quienes van s venir a mi primer añito
+        </p>
+        <br />
+        <li>
+          El evento se realizara en <b>LA CASA DEL MAXI</b>, el dia
+          <b>Que river borre la mancha</b>
+        </li>
+      </div>
+      <h3>Completa el formulario</h3>
+      <form id="form">
+        <div class="field">
+          <label for="from_name">familia</label>
+          <input type="text" name="from_name" id="from_name" />
+        </div>
+        <div class="field input__hidden">
+          <label for="to_name">to_name</label>
+          <input
+            type="text"
+            value="borisbodemand@hotmail.com"
+            name="to_name"
+            id="to_name"
+          />
+        </div>
+        <div class="field">
+          <label for="email_id">ingresa tu email</label>
+          <input
+            type="email"
+            name="email_id"
+            id="email_id"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+        </div>
+
+        <div class="field">
+          <label for="phone_id">ingresa tu numero</label>
+          <input type="tel" name="phone_id" id="phone_id" />
+        </div>
+        <div class="field">
+          <label for="message">Invitados</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <input type="submit" id="button" value="Send Email" />
+      </form>
+      <aside class="map__container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8083.75595195139!2d-59.08327683729999!3d-34.145231835699775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb75445e4aa81f%3A0x93f823209e5004ac!2sDuendes%20Eventos!5e0!3m2!1ses-419!2ses!4v1709112825281!5m2!1ses-419!2ses"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <a
+          href="https://maps.app.goo.gl/CuXp9hzDpd92P2718"
+          target="_blank"
+          rel="no-referrer no-opener"
+          >Ir al mapa</a
+        >
+      </aside>
+    </main>
+
+    <footer></footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("d7vayRRBeVeVXqJU9");
+    </script>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
